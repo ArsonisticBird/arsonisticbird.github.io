@@ -1,0 +1,23 @@
+>> HOW TO PLAY THIS GAME ON ANDROID OR IOS
+
+This game loads external script files and images. Just opening the index.html file in a browser will not work on Android or IOS.
+
+To play this game on your phone, you need two pieces of software: an HTTP server and a file extractor that can open the RAR file.
+
+For Android, I recommend Simple HTTP Server for the server, and AZIP Master for file extraction. They both have free versions.
+
+The steps are:
+
+	1. Download and install an HTTP Server and an extraction tool.
+
+	2. Download the Play Things RAR file.
+
+	3. Use the extraction tool to extract all files in the RAR file to somewhere on your phone (remember where you put it!). I usually put mine in a subfolder of my Documents folder.
+
+	4. Open the HTTP server program. It will have a space to set the 'root folder' for the server. Set it to the location where the index.html file for play things is stored.
+
+	5. Start the HTTP server.
+
+	6. The HTTP Server program will have it's address visible somewhere. This is often https://127.0.0.1 but there are alternatives. Open that location in your web browser.
+
+	7. Play the game!
