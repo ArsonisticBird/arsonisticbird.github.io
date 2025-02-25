@@ -44,7 +44,7 @@
 			width: 70%;
 		}
 	</style>
-	<body style="background-color:black;">
+	<body style="background-color:black;" onload="reloadPage(getCookie())">
 		<div class="wrap">
 			<div class="fleft">
 				<h1 style="color:white;"> D&D Homebrew </h1>
@@ -98,14 +98,34 @@
 				<button value="Salvage_Union/We_Were_Here_First_Digital_1.0.pdf" class="button" onclick="change(this)">We Were Here First</button>
 			</div>
 			<div class="fright">
-				<embed class="pdf" id="pdfEmbed" src="Arcadia/Arcadia01.pdf" style="min-height:100vh;width:100%;">
+				<embed class="pdf" id="pdfEmbed" style="min-height:100vh;width:100%;">
 			</div>
 		</div>
 	</body>
 	<script>
-		function change(but)
-		{
+		function change(but) {
 			pdfEmbed.setAttribute("src", but.value);
+			document.cookie = "pdfCurrent="+but.value
+			getCookie();
+		}
+		function getCookie() {
+			let cname = "pdfCurrent"
+			let name = cname + "=";
+			let decodedCookie = decodeURIComponent(document.cookie);
+			let ca = decodedCookie.split(';');
+			for(let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+		function reloadPage(cookie) {
+			pdfEmbed.setAttribute("src", cookie);
 		}
 	</script>
 </html>
