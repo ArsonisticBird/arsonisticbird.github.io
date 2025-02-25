@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-<style>
-.button {
-  background-color: black;
-  border: none;
-  color: grey;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-</style>
-</head>
+	<head>
+		<title>D&D Stuff</title>
+	</head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+	<style>
+		.button {
+			background-color: black;
+			border: none;
+			color: grey;
+			padding: 5px 5px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.pdf,
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		.h1 {
+			margin: 5%;
+			color:white;
+		}
+		.wrap {
+			width: 100%;
+		}
 
-<body style="background-color:black;">
-<p style="color:white;"> Arcadia </p>
-<a href="01.pdf" class="button">Issue 01</a>
-<a href="02.pdf" class="button">Issue 02</a>
-<a href="03.pdf" class="button">Issue 03</a>
-<a href="04.pdf" class="button">Issue 04</a>
-<a href="05.pdf" class="button">Issue 05</a>
-<a href="06.pdf" class="button">Issue 06</a>
-<a href="07.pdf" class="button">Issue 07</a>
-<a href="08.pdf" class="button">Issue 08</a>
-<a href="09.pdf" class="button">Issue 09</a>
-<a href="10.pdf" class="button">Issue 10</a>
-<a href="11.pdf" class="button">Issue 11</a>
-<a href="12.pdf" class="button">Issue 12</a>
-<a href="13.pdf" class="button">Issue 13</a>
-<a href="14.pdf" class="button">Issue 14</a>
-<a href="15.pdf" class="button">Issue 15</a><br>
-<a href="16.pdf" class="button">Issue 16</a>
-<a href="17.pdf" class="button">Issue 17</a>
-<a href="18.pdf" class="button">Issue 18</a>
-<a href="19.pdf" class="button">Issue 19</a>
-<a href="20.pdf" class="button">Issue 20</a>
-<a href="21.pdf" class="button">Issue 21</a>
-<a href="22.pdf" class="button">Issue 22</a>
-<a href="23.pdf" class="button">Issue 23</a>
-<a href="24.pdf" class="button">Issue 24</a>
-<a href="25.pdf" class="button">Issue 25</a>
-<a href="26.pdf" class="button">Issue 26</a>
-<a href="27.pdf" class="button">Issue 27</a>
-<a href="28.pdf" class="button">Issue 28</a>
-<a href="29.pdf" class="button">Issue 29</a>
-<a href="30.pdf" class="button">Issue 30</a>
-<p style="color:white;"> Books </p>
-<a href="Kinks_And_Cantrips.pdf" class="button">Kink and Cantrips</a>
-<a href="Grim_Hollow_CG.pdf" class="button">Grim Hollow Campaign Guide</a>
-<a href="Grim_Hollow_PG.pdf" class="button">Grim Hollow Players Guide</a>
-<a href="Grim_Hollow_MG.pdf" class="button">Grim Hollow Monster Grimoire</a>
-</body>
+		.fleft {
+			float:left; 
+			width: 30%;
+			overflow: auto;
+		}
+
+		.fright {
+			float: right;
+			width: 70%;
+		}
+	</style>
+	<body style="background-color:black;">
+		<div class="wrap">
+			<div class="fleft">
+				<h1 style="color:white;"> Books </h1>
+				<button value="Kinks_And_Cantrips.pdf" class="button" onclick="change(this)">Kink and Cantrips</button>
+				<button value="Grim_Hollow_CG.pdf" class="button" onclick="change(this)">Grim Hollow Campaign Guide</button>
+				<button value="Grim_Hollow_PG.pdf" class="button" onclick="change(this)">Grim Hollow Players Guide</button>
+				<button value="Grim_Hollow_MG.pdf" class="button" onclick="change(this)">Grim Hollow Monster Grimoire</button>
+				
+				<h1 style="color:white;"> Arcadia </h1>
+				<button value="01.pdf" class="button" onclick="change(this)">Issue 01</button>
+				<button value="02.pdf" class="button" onclick="change(this)">Issue 02</button>
+				<button value="03.pdf" class="button" onclick="change(this)">Issue 03</button>
+				<button value="04.pdf" class="button" onclick="change(this)">Issue 04</button>
+				<button value="05.pdf" class="button" onclick="change(this)">Issue 05</button>
+				<button value="06.pdf" class="button" onclick="change(this)">Issue 06</button>
+				<button value="07.pdf" class="button" onclick="change(this)">Issue 07</button>
+				<button value="08.pdf" class="button" onclick="change(this)">Issue 08</button>
+				<button value="09.pdf" class="button" onclick="change(this)">Issue 09</button>
+				<button value="10.pdf" class="button" onclick="change(this)">Issue 10</button>
+				<button value="11.pdf" class="button" onclick="change(this)">Issue 11</button>
+				<button value="12.pdf" class="button" onclick="change(this)">Issue 12</button>
+				<button value="13.pdf" class="button" onclick="change(this)">Issue 13</button>
+				<button value="14.pdf" class="button" onclick="change(this)">Issue 14</button>
+				<button value="15.pdf" class="button" onclick="change(this)">Issue 15</button>
+				<button value="16.pdf" class="button" onclick="change(this)">Issue 16</button>
+				<button value="17.pdf" class="button" onclick="change(this)">Issue 17</button>
+				<button value="18.pdf" class="button" onclick="change(this)">Issue 18</button>
+				<button value="19.pdf" class="button" onclick="change(this)">Issue 19</button>
+				<button value="20.pdf" class="button" onclick="change(this)">Issue 20</button>
+				<button value="21.pdf" class="button" onclick="change(this)">Issue 21</button>
+				<button value="22.pdf" class="button" onclick="change(this)">Issue 22</button>
+				<button value="23.pdf" class="button" onclick="change(this)">Issue 23</button>
+				<button value="24.pdf" class="button" onclick="change(this)">Issue 24</button>
+				<button value="25.pdf" class="button" onclick="change(this)">Issue 25</button>
+				<button value="26.pdf" class="button" onclick="change(this)">Issue 26</button>
+				<button value="27.pdf" class="button" onclick="change(this)">Issue 27</button>
+				<button value="28.pdf" class="button" onclick="change(this)">Issue 28</button>
+				<button value="29.pdf" class="button" onclick="change(this)">Issue 29</button>
+				<button value="30.pdf" class="button" onclick="change(this)">Issue 30</button>
+			</div>
+			<div class="fright">
+				<embed class="pdf" id="pdfEmbed" src="30.pdf" style="min-height:100vh;width:100%;">
+			</div>
+		</div>
+	</body>
+	<script>
+		function change(but)
+		{
+			pdfEmbed.setAttribute("src", but.value);
+		}
+	</script>
 </html>
