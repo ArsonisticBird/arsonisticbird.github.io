@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>TTRPG Stuff</title>
+	</head>
+    <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width">
+	<style>
+		.button {
+			background-color: black;
+			border: none;
+			color: grey;
+			padding: 5px 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.pdf,
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: auto;
+		}
+		.h1 {
+			margin: 5%;
+			color:white;
+		}
+		.wrap {
+			width: 100%;
+		}
+
+		.fleft {
+			float:left; 
+			width: 30%;
+			overflow: auto;
+		}
+
+		.fright {
+			float: right;
+			width: 70%;
+		}
+	</style>
+	<body style="background-color:black;">
+		<div class="wrap">
+			<div class="fleft">
+				<h1 style="color:white;"> D&D Homebrew </h1>
+				<button value="DND_Homebrew/Kinks_And_Cantrips.pdf" class="button" class="tooltip" onclick="change(this)">Kink and Cantrips</button>
+				<button value="DND_Homebrew/Grim_Hollow_CG.pdf" class="button" onclick="change(this)">Grim Hollow Campaign Guide</button>
+				<button value="DND_Homebrew/Grim_Hollow_PG.pdf" class="button" onclick="change(this)">Grim Hollow Players Guide</button>
+				<button value="DND_Homebrew/Grim_Hollow_MG.pdf" class="button" onclick="change(this)">Grim Hollow Monster Grimoire</button>
+				<button value="DND_Homebrew/Griffons_Saddlebag_B1.pdf" class="button" onclick="change(this)">Griffon's Saddlebag Book One</button>
+				<button value="DND_Homebrew/GriffonsSaddlebag_GriffonsOfTheMultiverse.pdf" class="button" onclick="change(this)" title="Griffons Of The Multiverse">Griffon's Saddlebag Griffons</button>
+				<button value="DND_Homebrew/One_If_By_Land_FINAL_1.2.pdf" class="button" onclick="change(this)">One if by Land, Two if by Sea, Three if by Air</button>
+				<button value="DND_Homebrew/Dragon_Flight.pdf" class="button" onclick="change(this)" title="The Essential Guide to Playing and Running Dragons">Dragon Flight</button>
+				<button value="DND_Homebrew/Insectopia-Player's Guide_v1.3.pdf" class="button" onclick="change(this)">Insectopia Players Guide</button>
+				
+				<h1 style="color:white;"> Arcadia </h1>
+				<button value="Arcadia/Arcadia01.pdf" class="button" onclick="change(this)">Issue 01</button>
+				<button value="Arcadia/Arcadia02.pdf" class="button" onclick="change(this)">Issue 02</button>
+				<button value="Arcadia/Arcadia03.pdf" class="button" onclick="change(this)">Issue 03</button>
+				<button value="Arcadia/Arcadia04.pdf" class="button" onclick="change(this)">Issue 04</button>
+				<button value="Arcadia/Arcadia05.pdf" class="button" onclick="change(this)">Issue 05</button>
+				<button value="Arcadia/Arcadia06.pdf" class="button" onclick="change(this)">Issue 06</button>
+				<button value="Arcadia/Arcadia07.pdf" class="button" onclick="change(this)">Issue 07</button>
+				<button value="Arcadia/Arcadia08.pdf" class="button" onclick="change(this)">Issue 08</button>
+				<button value="Arcadia/Arcadia09.pdf" class="button" onclick="change(this)">Issue 09</button>
+				<button value="Arcadia/Arcadia10.pdf" class="button" onclick="change(this)">Issue 10</button>
+				<button value="Arcadia/Arcadia11.pdf" class="button" onclick="change(this)">Issue 11</button>
+				<button value="Arcadia/Arcadia12.pdf" class="button" onclick="change(this)">Issue 12</button>
+				<button value="Arcadia/Arcadia13.pdf" class="button" onclick="change(this)">Issue 13</button>
+				<button value="Arcadia/Arcadia14.pdf" class="button" onclick="change(this)">Issue 14</button>
+				<button value="Arcadia/Arcadia15.pdf" class="button" onclick="change(this)">Issue 15</button>
+				<button value="Arcadia/Arcadia16.pdf" class="button" onclick="change(this)">Issue 16</button>
+				<button value="Arcadia/Arcadia17.pdf" class="button" onclick="change(this)">Issue 17</button>
+				<button value="Arcadia/Arcadia18.pdf" class="button" onclick="change(this)">Issue 18</button>
+				<button value="Arcadia/Arcadia19.pdf" class="button" onclick="change(this)">Issue 19</button>
+				<button value="Arcadia/Arcadia20.pdf" class="button" onclick="change(this)">Issue 20</button>
+				<button value="Arcadia/Arcadia21.pdf" class="button" onclick="change(this)">Issue 21</button>
+				<button value="Arcadia/Arcadia22.pdf" class="button" onclick="change(this)">Issue 22</button>
+				<button value="Arcadia/Arcadia23.pdf" class="button" onclick="change(this)">Issue 23</button>
+				<button value="Arcadia/Arcadia24.pdf" class="button" onclick="change(this)">Issue 24</button>
+				<button value="Arcadia/Arcadia25.pdf" class="button" onclick="change(this)">Issue 25</button>
+				<button value="Arcadia/Arcadia26.pdf" class="button" onclick="change(this)">Issue 26</button>
+				<button value="Arcadia/Arcadia27.pdf" class="button" onclick="change(this)">Issue 27</button>
+				<button value="Arcadia/Arcadia28.pdf" class="button" onclick="change(this)">Issue 28</button>
+				<button value="Arcadia/Arcadia29.pdf" class="button" onclick="change(this)">Issue 29</button>
+				<button value="Arcadia/Arcadia30.pdf" class="button" onclick="change(this)">Issue 30</button>
+				
+				<h1 style="color:white;"> Salvage Union </h1>
+				<button value="Salvage_Union/Salvage_Union_Digital_Edition_1.2.pdf" class="button" onclick="change(this)">Book 1.2</button>
+				<button value="Salvage_Union/False_Flag_Digital_1.0.pdf" class="button" onclick="change(this)">False Flag</button>
+				<button value="Salvage_Union/RAINMAKER_Digital_1.0.pdf" class="button" onclick="change(this)">Rainmaker</button>
+				<button value="Salvage_Union/We_Were_Here_First_Digital_1.0.pdf" class="button" onclick="change(this)">We Were Here First</button>
+			</div>
+			<div class="fright">
+				<embed class="pdf" id="pdfEmbed" src="30.pdf" style="min-height:100vh;width:100%;">
+			</div>
+		</div>
+	</body>
+	<script>
+		function change(but)
+		{
+			pdfEmbed.setAttribute("src", but.value);
+		}
+	</script>
+</html>
