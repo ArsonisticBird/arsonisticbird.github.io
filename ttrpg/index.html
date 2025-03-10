@@ -49,6 +49,7 @@
 	<body style="background-color:black;" onload="reloadPage(getCookie())">
 		<div class="wrap">
 			<div class="fleft">
+				<button value="" class="button" id="open" onclick="openPDF(this)"></button>
 				<h1> D&D Homebrew </h1>
 				<button value="DND_Homebrew/Kinks_And_Cantrips.pdf" class="button" onclick="change(this)">Kink and Cantrips</button>
 				<button value="DND_Homebrew/One_If_By_Land_FINAL_1.2.pdf" class="button" onclick="change(this)">One if by Land, Two if by Sea, Three if by Air</button>
@@ -118,6 +119,8 @@
 	<script>
 		function change(but) {
 			pdfEmbed.setAttribute("src", but.value);
+			document.getElementById("open").value = but.value
+			document.getElementById("open").innerText = "pdf"
 			document.cookie = "pdfCurrent="+but.value
 			getCookie();
 		}
@@ -139,6 +142,10 @@
 		}
 		function reloadPage(cookie) {
 			pdfEmbed.setAttribute("src", cookie);
+		}
+		
+		function openPDF(url) {
+			location.replace(window.location.href+url.value)
 		}
 	</script>
 </html>
