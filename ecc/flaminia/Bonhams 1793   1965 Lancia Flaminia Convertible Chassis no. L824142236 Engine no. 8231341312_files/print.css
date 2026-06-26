@@ -1,0 +1,696 @@
+/*
+Document:            print.css
+Date started:        11Jan2012
+By:                  RW
+Date last modified:  17Apr2012
+Purpose:             To enable the main sale listing page to
+be printed out with out terrible background colours etc.
+Copyright: Quru Ltd, Bonhams 1793 Ltd
+
+Modifications:
+Date      By  Details
+========= === ========================
+11Jan2012 RW  Initial
+13Jan2012 RW  Fundamental tweaks after only using desktop.css for screen
+18Jan2012 RW  Added extras for step blocks
+07Feb2012 RW  Added styles for home page, grid, results
+12Mar2012 RW  Resized illus300catslogue images, hit modules.
+17Apr2012 RW  Added div.midIllustration, .valuation_days, .departmentHighlights
+24Oct2012 CO  layout corrections now that this file is being properly applied, after the main stylesheet
+*/
+#back_from_print {
+    float:left;
+    margin:15px 0 0 20px;
+}
+@media print {
+  #back_from_print {
+    display: none;
+  }
+}
+#body_container{
+   margin: 25px auto;
+   /*width: 960px;*/
+   background-color: transparent;
+   color: black;
+}
+
+body
+{
+	margin: 0 0 0 25mm;
+	background-color: transparent;
+	color: black
+}
+
+@media screen {
+   body {
+      background-color: #dbd3c6;
+   }
+   #body_container {
+      background-color: white !important;
+      padding: 10px;
+   }
+   #close_print {
+      float: left;
+      margin-left: -16px;
+      margin-top: -16px;
+   }
+}
+
+@media print {
+   #close_print {
+       display: none;
+   }
+}
+
+a, a:link, a:visited
+{
+	color: black
+}
+
+h1, h2, h3, h4
+{
+	color: black !important;
+	page-break-after: avoid;
+}
+
+h1
+{
+	font-size:  2em;
+}
+
+h2
+{
+	font-size:  1.5em !important;
+}
+
+div#topbannermenu, div#midbannermenu, div#footer
+
+{
+	display: none;
+}
+
+span#loading.ajax_wait
+{
+	display: none;
+}
+
+#pictures li, li.sale, li.passage, #HeadlineImages li, #star_press_releases li, #star_articles li, #footnotes_list li
+{
+	list-style-type: none;
+}
+
+#HeadlineImages li, #star_press_releases li
+{
+   display: inline-block;
+   width: 160px;
+   vertical-align: top;
+}
+
+#star_articles li
+{
+   display: inline-block;
+   width: 250px;
+   vertical-align: top;
+}
+
+.imageviewer .controltoggle
+{
+   display: none;
+}
+
+.ValuationDaysDetail #main_text {
+    clear: both;
+    margin-bottom: 10px;
+    padding-top: 1px;
+}
+
+span#SaleSection.dislosureTriangle
+{
+	display: none;
+}
+
+
+.addthis, .howto_selling, .display_emailthis, .enter_live_bidding, .order_catalogue_button, .illuslabel_sale_status, .print_friendly, .related_items
+{
+	display:  none;
+}
+.module_columns650 {
+    width: 100%;
+}
+#column2
+{
+	min-height: 350px;
+}
+.SaleDetail #column2 { 
+    width: 650px;
+}
+#topbanner a#topbannerlogo
+{
+    float:  right;
+    margin: 0 40px 0 0;
+}
+
+#topbannerlogo img
+{
+	width: 53mm;
+    border: none;
+}
+
+div#topbanner
+{
+	/*padding-bottom:  4em;*/
+}
+div.midbanner {
+    display:none;
+}
+div#pagecontent {
+    margin-top:0;
+}
+#mainBlock
+{
+	min-height: 200px;
+	padding-bottom: 2em;
+	display: block;
+	clear: both;
+	float: none;
+}
+
+
+
+div#SaleNo, div.sale_division
+{
+	font-weight: bold;
+}
+
+#SpecialNotices div.SpecialNotice h3.dislosureTriangle
+{
+	font-weight: bold !important;
+	padding-left: 0px !important;
+}
+
+#SpecialNotices .NoticeText {
+    display: block !important;
+}
+
+
+div#SaleSections
+{
+	color:  black;
+	display: inline;
+}
+
+#SaleSections ul li a, div.shortDescription
+{
+	color: black !important;
+}
+
+.login_user, .howto_buying, .howto_selling
+{
+	display:  none;
+}
+
+div#PastHighlights
+{
+	margin-bottom: 2em;
+}
+
+
+#ModuleRef1
+{
+/*	padding-top: 2em;*/
+}
+
+#mainHeroImage
+{
+   float:  left;
+   display:  block;
+   margin: 0 6mm 6mm 0;
+   width: 300px;
+}
+
+img#HeroImage
+{
+   width:  300px;
+   height: 300px;
+}
+
+img.illus300catalogue
+{
+	margin: 0 6mm 6mm 0;
+	display: block;
+}
+
+
+
+li.img_count_1, li.img_count_2, li.img_count_3, li.count_0 img
+{
+	display:  none;
+}
+
+#homebanner ul
+{
+	list-style-type: none;
+}
+
+#homebanner h4
+{
+	display:  none;
+}
+
+#homebanner #recommendcolumn li
+{
+	width: 186px;
+	display: inline-block;
+	margin-right: 10px;
+	top: 0;
+	vertical-align: top;
+}
+
+#homebanner #recommendcolumn li.count_0
+{
+	display: block;
+	width:  580px;
+	padding-bottom: 2em;
+	font-size: 1.2em;
+}
+
+#slideshowheadline
+{
+   display: none;
+}
+
+.recommendbox .vcenterouter
+{
+
+}
+
+#mainHeroImageDescription
+{
+	margin-top: 0.5em;
+	width: 300px;
+}
+
+#imageActions, #imageReset, #imageDownload, .lot-navigation-block, .jump_to_lot, .nav_link
+{
+	display: none !important;
+}
+
+#Saleroom, #mainStory
+{
+	min-height: 400px;
+}
+
+#LocationMap
+{
+	float:  left !important;
+	margin: 0 6mm 6mm 0;
+}
+
+.illus300
+{
+	border: 1px solid black !important;
+	background-color: white !important;
+	display: inline;
+	float: left;
+	width: 300px;
+	height:  300px;
+	margin: 0 6mm 2mm 0;
+}
+
+.lot_block img#HeroImage, .lot_block .illus300
+{
+	width: 300px;
+	height:  300px;
+
+}
+
+.has_catalogue_image
+{
+   display: inline-block;
+   width: 234px;
+   float: left;
+   padding-right: 10px;
+}
+
+.illus300catalogue
+{
+	width: 180px;
+	height: 228px;
+}
+
+div.midIllustration
+{
+   display: inline-block;
+   width: 180px;
+   vertical-align: top;
+   padding-bottom: 10px;
+   padding-right: 10px;
+}
+
+div.midIllustration img.illus150
+{
+	width: 135px;
+	height: 135px;
+}
+
+div#departmentHighlights img.illus98
+{
+	width: 90px;
+	height: 90px;
+}
+
+div#AuctionHighlights{
+   padding-bottom: 10px;
+}
+
+div.bid_button.com_bid_button, div.salescommission_bid, div.bid_button.tel_bid_button
+{
+	display:  none;
+}
+
+
+
+div.lot_grid_view div.lot_thumbnail
+{
+	display: inline-block;
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+
+div.lot_grid_view span.lot_square
+{
+	position: static;
+	float: left;
+}
+
+div.lot_grid_view
+{
+	width: 640px;
+}
+
+#id_show_premium, #id_with_descriptions
+{
+	display:  none;
+}
+
+table.lot_results tr, table.lot_results_compact tr
+{
+	height: 2em;
+	vertical-align: top;
+}
+
+table.lot_results td.lot_number, table.lot_results_compact td.lot_number
+{
+	width: 40px;
+}
+
+table.lot_results td.hammer_price
+{
+	text-align: right;
+	white-space: nowrap;
+}
+
+table.lot_results_compact td.hammer_price
+{
+	text-align: right;
+	width: 130px;
+	padding-right: 50px;
+	white-space: nowrap;
+}
+
+
+div.module_columns328
+{
+	padding-left: 0px;
+}
+
+
+
+a.featured_sale.first_sale, a.featured_sale
+{
+	float:  left !important;
+	width:  210px;
+	margin: 0 6mm 1em 0;
+}
+
+
+form.advanced_popup_filters
+{
+	display:  none;
+}
+
+
+.lot_listing .module_header
+{
+	display:  none;
+}
+
+.module_header
+{
+	background-color:  white !important;
+	/*padding: 2em 0 0 !important;*/
+}
+
+div.latest_edition
+{
+	padding-top: 2em;
+}
+
+.latest_edition a
+{
+   display: block;
+   padding-bottom: 5px;
+   padding-top: 1px;
+}
+
+.related_items h5, .staff_related_items h5 {
+   margin-top: 10px;
+}
+
+.related_items a, .staff_related_items a {
+   display: block;
+   padding-bottom: 4px;
+   padding-top: 1px;
+}
+
+.module_content, .saleslot_listing, .saleslot_listing, .contacts, .related_departments, .headlines, .mediaheadlines, #ModuleRef11.headines, .lot_listing, div#ModuleRef1.lot_listing, .module_columns250, .mediaheadlines .module_header, div#ModuleRef11 .mediaheadlines, div.headlines, div.upcoming_sales, div.basic_module_one_color_mid_grey, div.step_blocks, .lot_browser, .sale_lot_symbols, div.valuation_days, div.sale_views, div.latest_edition
+{
+-webkit-border-radius: none;
+-moz-border-radius: none;
+border-radius: none;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+border: none;
+color: black;
+background: none  !important;
+background-color: transparent !important;
+padding: 0;
+padding-left: 0px !important;
+}
+
+.module_columns250 { clear:both; width:100% }
+
+.PublicationsIndex #step_blocks .step_blocks div {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.module_content .detail
+{
+   border-bottom: 1px solid #7D7B7A;
+   margin-bottom: 10px;
+   min-height: 155px;
+   padding-bottom: 10px;
+   position: relative;
+}
+
+.module_content .detail .detail_image {
+   float: left;
+   margin-right: 10px;
+}
+
+.top_lot_thumbnails
+{
+   display: none;
+}
+
+.module_content .detail .detail_content {
+   margin-left: 85px;
+}
+
+.no_print, div.mybonhams_joinnow, div.salesdisplay_flaglot, div.salesregister_to_bid.RegisterToBid, div.live_bidding, a.link_index, div.lot_browser, a#ClickForMore
+{
+	display: none;
+}
+
+
+div.detail, div.vcard
+{
+	page-break-before: auto;
+	page-break-inside: avoid;
+}
+
+.contacts, .related_departments, .headlines
+{
+    clear: both;
+	padding-bottom: 2em;
+}
+
+div.vcard
+{
+   margin-top: 20px;
+}
+
+div.vcard span.type, div.vcard a.url.fn.org, div.vcard div.street-address, div.vcard span.postal-code div.vcard a.url.fn
+{
+   display: none;
+}
+
+.contacts
+{
+	display: block !important;
+	position: relative;
+	margin-top: 4em;
+}
+.contacts > div > .vcard {
+    float:left;
+    width:24%;
+    min-height:8em;
+    margin:0 1% 2em 0;
+}
+
+.contacts h4, .related_departments h4, .detail_content a
+{
+	color: black !important;
+}
+
+.detail_content ul, ul#footnotes_list
+{
+   padding-left: 0px;
+}
+
+div.mediaheadlines div.module_content p
+{
+	display:  none;
+}
+
+.mediaheadlines .module_header h2
+{
+	color:  black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #C1BCB9;
+	width: 100%;
+}
+
+.sale_lot_symbols
+{
+	margin-bottom: 2em;
+}
+
+.sale_lot_symbols h4
+{
+	border-bottom: 1px solid silver;
+}
+
+
+#id_upcoming_past
+{
+	display:  none;
+}
+
+
+
+div.simple_search
+{
+	display:  none;
+}
+
+div.pagination, div.results_per_page
+{
+	display: none;
+}
+
+.legals_list {
+	position: relative;
+}
+.legals_list ol {
+    counter-reset: c1;
+    margin-left: 3.5em;
+    padding-left: 0;
+}
+.legals_list ol > li {
+    counter-increment: c1;
+    display: block; // Hide the default numbering
+    margin-left: 0;
+    *margin-left: 10px;
+    padding-left: 0;
+    *padding-left: 10px;
+    text-transform: uppercase;
+    font-weight:bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.legals_list ol > li:before {
+    content: counter(c1, decimal) " ";
+        left: 0;
+    position: absolute;
+}
+.legals_list ol > li > p {
+    text-transform: none;
+    font-weight: normal;
+}
+.legals_list ol > li > ol {
+    counter-reset: c2;
+    margin-left: 0; /* Need to override the 35px margin set at level 1 */
+    *margin-left: 10px;
+}
+.legals_list ol > li > ol > li {
+    counter-increment: c2;
+    text-transform: none;
+    font-weight: normal;
+}
+.legals_list ol > li > ol > li:before {
+    content: counter(c1, decimal) "." counter(c2, decimal) " ";
+}
+.legals_list ol > li > ol > li > ol {
+    counter-reset: c3;
+}
+.legals_list ol > li > ol > li > ol > li {
+    counter-increment: c3;
+}
+.legals_list ol > li > ol > li > ol > li:before {
+    content: counter(c1, decimal) "." counter(c2, decimal) "." counter(c3, decimal) " ";
+}
+.legals_list ol > li > ol > li > ol > li > ol {
+    counter-reset: c4;
+}
+.legals_list ol > li > ol > li > ol > li > ol > li {
+    counter-increment: c4;
+}
+.legals_list ol > li > ol > li > ol > li > ol > li:before {
+    content: counter(c1, decimal) "." counter(c2, decimal) "." counter(c3, decimal) "." counter(c4, decimal) " ";
+}
+
+.legals_list_ie7 ol {
+    list-style-type: none;
+    list-style-position: outside;
+    margin-left: 3.5em;
+}
+.legals_list_ie7 ol li {
+    margin:10px 0 5px;
+    position: relative;
+}
+.legals_list_ie7 ol li span {
+    position: absolute;
+    left: -3.5em;
+}
+.legals_list_ie7 ol li.main {
+    text-transform: uppercase;
+}
+.legals_list_ie7 ol li p {
+    text-transform: none;
+}
+
+

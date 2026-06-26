@@ -1,0 +1,380 @@
+/* CSS Document */
+body {
+margin:0;
+padding:0;
+
+}
+
+img 
+	{
+ 	border: none;
+	 }
+
+.headerContainer{
+
+/* using this so menutopright so it has something */
+	position:relative;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:99px;
+	background-image: url(../images/back_top.gif);
+	background-repeat: repeat-x;
+}
+.logoContainer {
+	padding-top:21px;
+	padding-left:10px;
+
+	width:770px;
+	height:60px;
+	
+}
+
+.menutopright {
+
+position:absolute;
+top: 72px;
+left:669px;
+
+
+}
+.linksTop {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: normal;
+	color: #FFFFFF;
+
+}
+
+.linksTop a {
+
+ 	color: #FFFFFF; 
+ 	text-decoration: none;
+	
+}
+
+.linksTop a:link {
+
+ 	color: #FFFFFF; 
+ 	text-decoration: none;
+	
+}
+
+.linksTop a:visited {
+
+ 	color: #000000; 
+ 	text-decoration: none;
+	
+}
+
+.linksTop a:active {
+
+ 	color: #000000; 
+ 	text-decoration: none;
+	
+}
+
+.linksTop a:hover {
+
+ 	color: #2FD7F5; 
+ 	text-decoration: underline;
+	
+}
+
+
+
+.copy
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	font-weight: normal;
+	color: #999999;
+	display: block;
+	
+	
+	padding-top: 2px;
+	padding-left: 8px;
+	
+	
+
+}
+
+
+.imgIdent{
+
+padding-left: 28px;
+
+}
+.copyGreen
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight: normal;
+	color: #828261;
+	display: block;
+	
+	
+	padding-top: 2px;
+	padding-left: 8px;
+	padding-right:45px;
+	
+
+}
+
+
+.copyGreenMed
+
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 75%;
+	font-weight: normal;
+	color: #828261;
+	display: block;
+	
+	
+	padding-top: 2px;
+	padding-left: 8px;
+	padding-right:45px;
+	
+
+}
+.containingBox{
+	width:700px;
+	height:100%;
+	/*height:400px;*/
+	/*border:1px solid #F53131;*/
+
+}
+
+.leftColumn {
+float:left;
+width:182px;
+/*border:1px solid #F53131;*/
+}
+
+.leftPicture {
+width:182px;
+height:164px;
+background-image: url(../images/car.gif);
+
+}
+.rightTop{
+/* CSS Document
+/* margin: 30px 0px 0px 10px; */
+height:100px;
+padding-top:50px;
+padding-left:30px;
+background-color: #E6E9E3;
+/*border:1px solid black;*/
+border-bottom:1px dotted black
+}
+.rightContent{
+/* CSS Document
+/* margin: 30px 0px 0px 10px; */
+/*height:100px;*/
+padding-top:10px;
+padding-left:30px;
+background-color: #F3F5F1;
+/*border:1px solid black; */
+}
+
+.rightcolumn{
+margin-left:182px;
+height: 670px;
+width: 550px;
+background-color: #F3F5F1;
+
+/*border:1px solid #0FFF2F;*/
+}
+
+.rightcolumnCars{
+margin-left:182px;
+
+width: 550px;
+background-color: #F3F5F1;
+
+/*border:1px solid #0FFF2F;*/
+}
+
+#navcontainer ul
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	font-weight: normal;
+	color: #3F3F3F;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: right;
+}
+
+#navcontainer a
+{
+	display: block;
+	color: #FFF;
+	color: #3F3F3F;
+	width: 180px;
+	padding-top:5px;
+	padding-bottom:2px;
+	text-decoration: none;
+	border-bottom:1px solid #10A6C4;
+}
+
+#navcontainer a:hover
+{
+
+color: #93F0F5;
+background-color: #10A6C4;
+}
+
+/*#matrix li.m7 a*/
+#navcontainer li.selected
+{
+
+color: #93F0F5;
+background-color: #9BD5EB;
+}
+
+
+
+.nextHolder{
+margin:0px 5px 10px  80px;
+}
+
+
+
+.next {
+	margin:10px 5px 10px  360px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	font-weight: normal;
+	color: #57AECF;
+
+}
+
+.next a {
+
+ 	color: #22659C; 
+ 	text-decoration: none;
+	
+}
+
+.next a:link {
+
+ 	color: #22659C; 
+ 	text-decoration: none;
+	
+}
+
+.next a:visited {
+
+ 	color: #000000; 
+ 	text-decoration: none;
+	
+}
+
+.next a:active {
+
+ 	color: #22659C; 
+ 	text-decoration: none;
+	
+}
+
+.next a:hover {
+
+ 	color: #22659C; 
+ 	text-decoration: underline;
+	
+}
+
+
+.carLink {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	font-weight: bold;
+	color: #57AECF;
+
+}
+
+.carLink  a {
+
+ 	color: #22659C; 
+ 	text-decoration: none;
+	
+}
+
+.carLink  a:link {
+
+ 	color: #22659C; 
+ 	text-decoration: none;
+	
+}
+
+.carLink  a:visited {
+
+ 	color: #000000; 
+ 	text-decoration: none;
+	
+}
+
+.carLink  a:active {
+
+ 	color: #22659C; 
+ 	text-decoration: none;
+	
+}
+
+.carLink  a:hover {
+
+ 	color: #1E67B0; 
+ 	text-decoration: underline;
+	
+}
+
+
+.CarPriceContainer{
+margin-top:10px;
+width:470px;
+border-bottom:1px solid black;
+padding-bottom:10px;
+
+}
+
+.CarPriceContainerLeft {
+float:left;
+}
+
+.CarPriceContainerRight {
+float:right;
+}
+
+.flush
+
+{
+
+clear:both;
+}
+
+.imgClass
+ {
+margin-top:10px;
+margin-bottom:10px;
+border:10px solid white;
+}
+
+
+.bottomspacer
+{
+height:100px;
+}
+
+.bottomStrip
+{
+
+/* using this so menutopright so it has something */
+	
+	width:100%;
+	height:30px;
+	background-color: #10A6C4;
+}
